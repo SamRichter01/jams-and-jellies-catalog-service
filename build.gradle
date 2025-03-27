@@ -21,10 +21,24 @@ dependencies {
 	/*implementation platform 'org.hibernate.orm:hibernate-platform:6.6.9.Final'*/
 
 	implementation 'org.hibernate.orm:hibernate-core'
+	implementation 'org.postgresql:postgresql'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'org.postgresql:postgresql'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+
+	// Hibernate Validator
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.0.Final'
+    implementation 'org.glassfish:jakarta.el:4.0.2'
+
+    /* Agroal connection pool
+    implementation 'org.hibernate.orm:hibernate-agroal:6.6.11.Final'
+    implementation 'io.agroal:agroal-pool:2.1'
+	*/
+
+    // logging via Log4j
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
